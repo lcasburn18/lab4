@@ -1,13 +1,14 @@
-import logo from './logo.svg';
+import Content from './components/Content';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <h1>Hello World!</h1>
-        <h2>It is {new Date().toLocaleTimeString()}.</h2>
-      </div>
+      <Header></Header>
+      <Content></Content>
+      <Footer></Footer>
     </div>
   );
 }
