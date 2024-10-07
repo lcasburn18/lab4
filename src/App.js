@@ -4,6 +4,8 @@ import NavigationBar from './components/NavigationBar';
 import Content from './components/Content';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Read from './components/Read.js';
+import Create from './components/Create.js';
 import './App.css';
 
 // Component to manage content based on the current URL
@@ -34,13 +36,14 @@ function App() {
           <Route path="/home" element={<Content />} />
 
           {/* Read route which displays the Read Component and Footer*/}
-          <Route path="/read" element={<h1>Read Component</h1>} />
+          <Route path="/read" element={<Read />} />
 
           {/* Create route which displays the Create Component and Header*/}
-          <Route path="/create" element={<h1>Create Component</h1>} />
+          <Route path="/create" element={<Create />} />
 
           {/* Redirect to /home if the user goes to the root URL */}
           <Route path="/" element={<Content />} />
+          
         </Routes>
 
         {/* Conditionally display Header or Footer based on the route */}

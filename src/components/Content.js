@@ -1,4 +1,3 @@
-// Import the React library
 import React from 'react';
 
 // Define a functional component called 'Content'
